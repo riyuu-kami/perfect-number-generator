@@ -14,7 +14,7 @@ bool isPerfect(int n) {
 }
 
 int main() {
-    for (int num = 1000000; num <= 100000000; num++) {
+    for (int num = 2; num <= 100000000; num++) {
         if (isPerfect(num)) {
             cout << num << endl;
         }
