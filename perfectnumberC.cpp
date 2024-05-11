@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool isPerfect(int n) {
+bool Perfect(int n) {
     int sum = 1;
     for (int i = 2; i * i <= n; i++) {
         if (n % i == 0) {
@@ -15,7 +15,7 @@ bool isPerfect(int n) {
 
 int main() {
     for (int num = 2; num <= 100000000; num++) {
-        if (isPerfect(num)) {
+        if (Perfect(num)) {
             cout << num << endl;
         }
     }
